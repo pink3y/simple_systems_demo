@@ -3,6 +3,7 @@ import "../App.css";
 import loadingSpinner from "../assets/loading-spinner.svg";
 import RepoList from "./RepoList";
 import { repolistItem, userlistItem } from "../store/features/userSlice";
+import downArrow from "../assets/down.png";
 import { getUserRepos } from "../store/api/github";
 
 interface UserComponentProps {
@@ -51,7 +52,11 @@ function UserComponent(props: UserComponentProps) {
           <h4>{props.userlistItem.login}</h4>
           {props.userlistItem.name && <h4>({props.userlistItem.name})</h4>}
         </div>
-        <span> {isActive ? "up" : "down"}</span>
+        <img
+          className="arrowPicture"
+          src={downArrow}
+          style={{ transform: isActive ? "rotate(180deg)" : undefined }}
+        />
       </div>
       {isActive && ongoingRepoRequest && (
         <div className="repoLoadingSpinner">

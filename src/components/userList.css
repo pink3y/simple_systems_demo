@@ -41,8 +41,12 @@
   height: 50px;
   border-radius: 50%;
 }
+.arrowPicture {
+  height: 20px;
+}
 .userProfileContainer {
   display: flex;
+  align-items: center;
 }
 .userProfileContainer > h4 {
   margin: auto;

@@ -1,4 +1,5 @@
 import { repolistItem } from "../store/features/userSlice";
+import star from "../assets/star.png";
 import "./repoList.css";
 
 interface RepoComponentProps {
@@ -14,7 +15,7 @@ function RepoComponent(props: RepoComponentProps) {
         </a>
         <div className="repoStars">
           <h4> {props.userRepo.stargazers_count}</h4>
-          <div> {"-STARS"} </div>
+          <img className="starIcon" src={star} />
         </div>
       </div>
       <span className="languageSpan"> ( {props.userRepo.language} )</span>

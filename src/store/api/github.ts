@@ -1,6 +1,6 @@
 import { Octokit } from "octokit";
 
-const GITHUB_ACCESS_TOKEN = "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"; // !!TODO PUT THIS IN DEPLOYMENT
+const GITHUB_ACCESS_TOKEN = "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"; // !!TODO PUT THIS IN DEPLOYMENT
 const octoKit = new Octokit({ auth: GITHUB_ACCESS_TOKEN });
 
 export const searchGithubUsers = async (username: string, pageNr: number) => {
@@ -15,6 +15,7 @@ export const searchGithubUsers = async (username: string, pageNr: number) => {
 export const getUserRepos = async (githubUsername: string) => {
   const repoResponse = await octoKit.rest.search.repos({
     q: `user:${githubUsername}`,
+    page: 0,
   });
   console.log("repoResponse", repoResponse);
   return repoResponse.data.items;
