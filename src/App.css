@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.appContainer {
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  padding: 2em;
+}

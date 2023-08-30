@@ -1,0 +1,50 @@
+.userlistContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0;
+}
+.userlistItemContainer {
+  color: white;
+  background: #d4d4d0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2px;
+  padding: 5px 15px;
+  flex: 1;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.repoLoadingSpinner {
+  display: flex;
+  justify-content: flex-end;
+}
+.repoLoadingSpinner > img {
+  position: relative;
+  right: 30px;
+  top: 15px;
+  height: 75px;
+  width: 75px;
+}
+.userlistItemContainer:active {
+  background: #aeaea7;
+}
+.userlistItemContainer:hover {
+  color: black;
+  background: #f0f0ef;
+}
+.userlistItemContainer > img {
+  margin: 50px;
+}
+.userProfilePicture {
+  height: 50px;
+  border-radius: 50%;
+}
+.userProfileContainer {
+  display: flex;
+}
+.userProfileContainer > h4 {
+  margin: auto;
+  margin-left: 15px;
+}

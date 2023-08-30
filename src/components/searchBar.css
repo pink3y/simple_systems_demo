@@ -1,0 +1,24 @@
+.searchBarContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.searchBarContainer > input {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 4px;
+  background: #e3e3e3;
+  border-radius: 3px;
+}
+.searchBarContainer > button {
+  width: 100%;
+  max-width: 621px;
+  align-self: center;
+}
+.searchBarContainer > img {
+  position: relative;
+  top: 150px;
+  height: 33%;
+  max-height: 150px;
+}
